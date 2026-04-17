@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoTracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CryptoTracker</h1>
+        
+        <div class="search">
+            <input type="text" id="search" placeholder="Search coins...">
+            <button id="refresh">Refresh</button>
+        </div>
+
+        <div class="portfolio">
+            <div>Portfolio: $<span id="total">0</span></div>
+            <div>24h: <span id="change">0%</span></div>
+        </div>
+
+        <h2>Watchlist (<span id="count">0</span>)</h2>
+        <div id="watchlist"></div>
+
+        <h2>Top Coins</h2>
+        <div id="coins"></div>
+
+        <div id="error"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
